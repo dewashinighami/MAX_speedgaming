@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cara Setting OBS untuk PC Low End Agar Live Streaming Lancar</title>
+  <meta name="description" content="Panduan lengkap cara setting OBS untuk PC low end agar live streaming dan recording tetap lancar tanpa lag.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family:'Orbitron', sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(0,180,255,.15), transparent 60%),
+        radial-gradient(circle at bottom, rgba(255,215,0,.15), transparent 60%),
+        linear-gradient(180deg,#050505,#000);
+      color:#fff;
+      padding:40px;
+    }
+
+    h1, h2 {
+      margin:25px 0 15px;
+    }
+
+    p {
+      line-height:1.8;
+      color:#ccc;
+      margin-bottom:18px;
+      max-width:900px;
+    }
+
+    a.btn {
+      display:inline-block;
+      padding:12px 26px;
+      border-radius:30px;
+      background:linear-gradient(90deg,gold,#00c8ff);
+      color:#000;
+      text-decoration:none;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+
+    ul {
+      margin:15px 0 25px 20px;
+      color:#ccc;
+      line-height:1.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<a class="btn" href="index.html">⬅ Kembali ke Home</a>
+
+<h1>Cara Setting OBS untuk PC Low End Agar Live Streaming Tetap Lancar</h1>
+
+<p>
+OBS Studio adalah software gratis yang sangat populer untuk live streaming dan
+recording video. Namun, pada PC dengan spesifikasi rendah (low end), OBS sering
+menyebabkan lag, drop frame, atau bahkan crash. Dengan pengaturan yang tepat,
+OBS tetap bisa digunakan dengan lancar meskipun di PC berspesifikasi rendah.
+</p>
+
+<h2>1. Spesifikasi Minimal PC Low End</h2>
+
+<p>
+PC low end yang masih bisa menjalankan OBS umumnya memiliki spesifikasi seperti:
+</p>
+
+<ul>
+  <li>Processor Dual Core / Quad Core</li>
+  <li>RAM 4 GB</li>
+  <li>GPU onboard (Intel HD / Vega)</li>
+  <li>Storage SSD lebih disarankan</li>
+</ul>
+
+<p>
+Jika spesifikasi di bawah itu, sebaiknya gunakan resolusi dan bitrate serendah mungkin.
+</p>
+
+<h2>2. Setting Video OBS (Paling Penting)</h2>
+
+<p>
+Masuk ke <strong>Settings → Video</strong>, lalu atur:
+</p>
+
+<ul>
+  <li>Base Canvas Resolution: <strong>1280x720</strong></li>
+  <li>Output Resolution: <strong>854x480</strong> atau <strong>1280x720</strong></li>
+  <li>Downscale Filter: <strong>Bilinear</strong></li>
+  <li>FPS: <strong>30</strong></li>
+</ul>
+
+<p>
+Pengaturan ini sangat membantu mengurangi beban CPU dan GPU.
+</p>
+
+<h2>3. Setting Output OBS untuk PC Low End</h2>
+
+<p>
+Masuk ke <strong>Settings → Output</strong> dan pilih mode <strong>Simple</strong>.
+</p>
+
+<ul>
+  <li>Video Bitrate: <strong>1500 – 2500 kbps</strong></li>
+  <li>Encoder: <strong>x264</strong> (jika tidak ada GPU)</li>
+  <li>Encoder Preset: <strong>Veryfast</strong></li>
+</ul>
+
+<p>
+Hindari preset medium atau slow karena sangat berat untuk PC low end.
+</p>
+
+<h2>4. Kurangi Source & Efek</h2>
+
+<p>
+Semakin banyak source di OBS, semakin berat kinerja PC. Untuk PC low end:
+</p>
+
+<ul>
+  <li>Gunakan 1 kamera saja</li>
+  <li>Hindari filter efek berat</li>
+  <li>Matikan preview jika tidak perlu</li>
+  <li>Gunakan gambar statis daripada animasi</li>
+</ul>
+
+<h2>5. Tutup Aplikasi Lain</h2>
+
+<p>
+Sebelum streaming atau recording, tutup aplikasi yang tidak diperlukan seperti
+browser berat, game launcher, atau aplikasi background lainnya agar OBS
+mendapatkan resource maksimal.
+</p>
+
+<h2>Kesimpulan</h2>
+
+<p>
+PC low end tetap bisa digunakan untuk live streaming dan recording menggunakan OBS
+jika pengaturannya tepat. Fokus utama adalah menurunkan resolusi, FPS, dan bitrate,
+serta meminimalkan penggunaan efek. Dengan setup yang sederhana, OBS bisa berjalan
+lebih stabil tanpa mengorbankan kualitas secara berlebihan.
+</p>
+
+<p>
+Setting yang tepat akan membuat streaming lebih lancar dan mengurangi risiko lag
+atau drop frame.
+</p>
+
+</body>
+</html>
